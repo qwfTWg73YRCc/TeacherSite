@@ -53,16 +53,17 @@
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
     <div>
-      <h3 class="float-md-start mb-0">Логотип</h3>
+
       <nav class="navbar navbar-expand justify-content-center fixed-top bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav nav-masthead mr-auto">
+        <ul class="navbar-nav nav-masthead mr-auto justify-content-center">
         <li class="nav-item">
           <a class="navbar-brand" href="#">
-            <img src="/MainPage/static/Photo.png" alt="Logo" style="width:40px;">
+            {% load static %} <img src="
+            {% static "media/IES.png" %}" alt="Logo" style="width:70px;" />
           </a>
         </li>
         <li class="nav-item active">
@@ -77,12 +78,32 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Контакты</a>
         </li>
+        <li class="nav-item">
+            <button class="btn btn-danger" type="submit">Регистрация</button>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href=""> </a>
+        </li>
+        <li class="nav-item">
+            <button class="btn btn-success" type="submit">Войти</button>
+        </li>
         </ul>
         </div>
       </nav>
     </div>
   </header>
 
+  <div class="row">
+  <div class="col-sm-4">
+      <img src="{% static "media/Teacher_Photo.png" %}" alt="teacher_photo.png" style="width:200px;" >
+
+  </div>
+  <div class="col-sm-4">
+      <p>Личный сайт учителя английского и французского языков</p>
+      <h3>Эктовой Ирины Викторовны</h3>
+
+  </div>
+  </div>
 
   <footer class="mt-auto text-white-50">
     <p>Москва 2021 год</p>
