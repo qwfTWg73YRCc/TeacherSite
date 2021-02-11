@@ -36,9 +36,12 @@
 
 <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
   <header class="mb-auto">
-{% block content %}{% endblock %}
+{% block navbar %}{% endblock %}
   </header>
 
+<div class="row">
+    {% block div %}{% endblock %}
+</div>
 
   <footer class="mt-auto text-white-50">
     <p>Москва 2021 год</p>
