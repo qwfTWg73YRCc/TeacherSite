@@ -6,7 +6,8 @@ from . import views
 
 
 urlpatterns = [
-    url(r'',views.MainPage_index, name="index"),
+    url(r'/',views.MainPage, name="mainpage"),
+    url(r'/about',views.About, name="about"),
 ]
 
 urlpatterns += staticfiles_urlpatterns()
